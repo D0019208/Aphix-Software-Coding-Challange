@@ -1,0 +1,137 @@
+/*
+   This is the loading spinner and animation itself
+*/
+@-webkit-keyframes spinner-border{
+    to{
+        -webkit-transform:rotate(360deg);transform:rotate(360deg)
+    }
+}
+@keyframes spinner-border{
+    to
+    {-webkit-transform:rotate(360deg);transform:rotate(360deg)
+    }
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: text-bottom;
+    border: .15em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+
+    animation: spinner-border .75s linear infinite;
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: spinner-border;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.text-warning {
+    color: #fb3 !important;
+}
+
+/*
+    This is the loading overlay
+*/
+.loading-overlay {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: block;
+    position: fixed;
+    transform: translateZ(0px);
+    opacity: 0.52;
+    z-index: 4;
+    background-color: #000;
+}
+
+/*
+    Class to hide overflow (prevent scrolling)
+*/
+.hide_overflow {
+    overflow: hidden;
+}
+
+/*
+    This is the loading container
+*/
+.loading-wrapper.sc-ion-loading-md {
+    border-radius: 2px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-box-shadow: 0 16px 20px rgba(0,0,0,.4);
+    box-shadow: 0 16px 20px rgba(0,0,0,.4);
+}
+
+.loading-wrapper.sc-ion-loading-md {
+    border-radius: 2px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-box-shadow: 0 16px 20px rgba(0,0,0,.4);
+    box-shadow: 0 16px 20px rgba(0,0,0,.4);
+}
+
+.loading-wrapper.sc-ion-loading-md {
+    padding-left: unset;
+    padding-right: unset;
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+}
+
+.loading-wrapper.sc-ion-loading-md {
+    opacity: 1; 
+    transform: scale(1);
+    margin: 5% auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: inherit;
+    align-items: center;
+    -ms-flex-pack: inherit;
+    justify-content: center;
+    width: auto;
+    min-width: auto;
+    max-width: 200px;
+    height: auto;
+    min-height: auto;
+    max-height: 90%;
+    background: #f2f2f2;
+    z-index: 10;
+}
+
+.loading-spinner.sc-ion-loading-md + .loading-content.sc-ion-loading-md {
+    color: black;
+    margin-left: unset;
+    -webkit-margin-start: 15px;
+    margin-inline-start: 15px;
+    font-family: "Roboto","Helvetica Neue",sans-serif;
+}
