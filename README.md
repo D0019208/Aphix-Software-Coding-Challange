@@ -15,6 +15,7 @@ This is a web application built using Laravel 8.5.0 and utilizes a REST API and 
 
 To run the application, perform the following commands using Git Bash or any other command tool inside the application folder and then copy and paste the link provided into a browser of your choice:
 ```
+composer update
 php artisan serve 
 ```
 
